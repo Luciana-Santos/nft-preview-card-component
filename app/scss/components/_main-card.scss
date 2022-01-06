@@ -1,0 +1,78 @@
+@use '../util' as *;
+
+.card {
+  background: var(--vdk-bl-cbg);
+  padding: rem(25);
+  margin: 0 auto;
+  max-width: rem(330);
+  border-radius: rem(15);
+
+  &__img {
+    margin-bottom: rem(30);
+    height: rem(278);
+    width: rem(278);
+
+    img {
+      border-radius: rem(6);
+    }
+  }
+
+  h1 {
+    font-size: rem(22);
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: rem(25);
+  }
+
+  > p {
+    font-size: rem(17);
+    max-width: rem(275);
+    line-height: rem(30);
+    color: var(--soft-blue);
+    margin-bottom: rem(30);
+    font-weight: 300;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    font-size: rem(16);
+    color: var(--soft-blue);
+
+    li {
+      display: flex;
+      align-items: center;
+      font-weight: 400;
+
+      &:first-child {
+        color: var(--cyan);
+        font-weight: 700;
+      }
+
+      img {
+        margin-right: rem(7);
+      }
+    }
+  }
+
+  &__atrib {
+    display: flex;
+    align-items: center;
+    color: var(--soft-blue);
+
+    > p {
+      margin-left: rem(15);
+    }
+
+    span {
+      color: var(--white);
+    }
+
+    img {
+      width: rem(33);
+      height: rem(33);
+      border-radius: 50%;
+      border: rem(1) solid var(--white);
+    }
+  }
+}
