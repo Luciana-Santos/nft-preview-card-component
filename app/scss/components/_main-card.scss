@@ -124,8 +124,6 @@
   }
 
   @include breakpoint(medium) {
-    margin-top: rem(137);
-    margin-bottom: rem(137);
     box-shadow: 0 0 18px 10px rgba(0, 0, 0, .1);
   }
 }
